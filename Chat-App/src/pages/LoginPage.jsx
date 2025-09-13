@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import assets from '../assets/assets';
+import assets from '../assets/assets.js';
 import { useContext } from 'react';
 import { AuthDataContext } from '../../context/AuthContext';
 
