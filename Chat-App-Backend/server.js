@@ -50,11 +50,8 @@ app.get("/api/status",(req,res)=>{
 //use the router.
 app.use('/api/auth',router);
 app.use('/api/messages',messageRouter)
-if(process.env.NODE_ENV !=="production")
-{
+
 const PORT=process.env.PORT||5000
 server.listen(PORT,()=>{
     console.log("server started");
 });
-}
-export default server;//exporting for vercel.
